@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aperçu &mdash; Documentation Pointage Fr 1.0</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../_static/pygments.css?v=b86133f3"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../_static/css/theme.css?v=e59714d7"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../_static/css/custom.css?v=4816a4b2"
+    />
+
+    <script src="../_static/jquery.js?v=5d32c60e"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+    <script
+      data-url_root="../"
+      id="documentation_options"
+      src="../_static/documentation_options.js?v=bd10cbeb"
+    ></script>
+    <script src="../_static/doctools.js?v=888ff710"></script>
+    <script src="../_static/sphinx_highlight.js?v=4825356b"></script>
+    <script src="../_static/translations.js?v=d99ca74e"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Recherche" href="../search.html" />
+    <link rel="next" title="Introduction" href="../Config_guide/index.html" />
+    <link
+      rel="prev"
+      title="Présentation générale de l’outil de COCOBEACH"
+      href="../general_presentation/index.html"
+    />
+  </head>
+
+  <body class="wy-body-for-nav">
+    <div class="wy-grid-for-nav">
+      <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+        <div class="wy-side-scroll">
+          <div class="wy-side-nav-search">
+            <a href="../general_presentation/index.html" class="icon icon-home">Documentation COCOBEACH Fr </a>
+            <div role="search">
+              <form
+                id="rtd-search-form"
+                class="wy-form"
+                action="../search.html"
+                method="get"
+              >
+                <input
+                  type="text"
+                  name="q"
+                  placeholder="Rechercher docs"
+                  aria-label="Rechercher docs"
+                />
+                <input type="hidden" name="check_keywords" value="yes" />
+                <input type="hidden" name="area" value="default" />
+              </form>
+            </div>
+          </div>
+          <div
+            class="wy-menu wy-menu-vertical"
+            data-spy="affix"
+            role="navigation"
+            aria-label="Navigation menu"
+          >
+            <p class="caption" role="heading">
+              <span class="caption-text">Présentation générale</span>
+            </p>
+            <ul>
+              <li class="toctree-l1">
+                <a class="reference internal" href="index.html"
+                  >Présentation générale de l’outil COCOBEACH</a
+                >
+              </li>
+            </ul>
+            <p class="caption" role="heading">
+              <span class="caption-text">Fonctionnalités de la plateforme</span>
+            </p>
+            <ul>
+              <li class="toctree-l1">
+                <a
+                  class="reference internal"
+                  href="#"
+                  >Aperçu</a
+                >
+              </li>
+              <li class="toctree-l1">
+                <a
+                  class="reference internal"
+                  href="#connexion-a-la-plateforme"
+                  >Connexion à la plateforme</a
+                >
+              </li>
+              <li class="toctree-l1">
+                <a
+                  class="reference internal"
+                  href="#events"
+                  >Gestion des évènements</a
+                >
+              </li>
+              <li class="toctree-l1">
+                <a
+                  class="reference internal"
+                  href="#parametrer-sa-plateforme"
+                  >Gestion des packages</a
+                >
+              </li>
+              <li class="toctree-l1">
+                <a
+                  class="reference internal"
+                  href="#gestion-des-employes"
+                  >Visualisation de l'historique de reservation</a
+                >
+              </li>
+              <li class="toctree-l1">
+                <a
+                  class="reference internal"
+                  href="#gestion-des-comptes"
+                  >Gestion des réservations</a
+                >
+              </li>
+              <li class="toctree-l1">
+                <a
+                  class="reference internal"
+                  href="#utilisateur"
+                  >Gestion des utilisateurs</a
+                >
+              </li>
+            </ul>
+            <!-- <p class="caption" role="heading">
+              <span class="caption-text">Guide pratique de configuration</span>
+            </p>
+            <ul>
+              <li class="toctree-l1">
+                <a class="reference internal" href="Config_guide/index.html"
+                  >Introduction</a
+                >
+              </li>
+              <li class="toctree-l1">
+                <a
+                  class="reference internal"
+                  href="Config_guide/index.html#etape-1-connexion-a-la-plateforme-dediee"
+                  >Étape 1 : Connexion à la plateforme dédiée.</a
+                >
+              </li>
+              <li class="toctree-l1">
+                <a
+                  class="reference internal"
+                  href="Config_guide/index.html#etape-2-parametrage-de-lentreprise"
+                  >Étape 2 : Paramétrage de l'évènement.</a
+                >
+              </li>
+              <li class="toctree-l1">
+                <a
+                  class="reference internal"
+                  href="Config_guide/index.html#etape-3-ajout-dutilisateurs-supplementaires"
+                  >Étape 3 : Ajout des packages en fonction d'évènement.</a
+                >
+              </li>
+              <li class="toctree-l1">
+                <a
+                  class="reference internal"
+                  href="Config_guide/index.html#etape-4-enregistrement-des-employes"
+                  >Étape 4 : Enregistrement des réservations.</a
+                >
+              </li>
+              <!-- <li class="toctree-l1">
+                <a
+                  class="reference internal"
+                  href="Config_guide/index.html#etape-5-mise-en-place-sur-site-et-phase-de-test"
+                  >Étape 5 : Mise en place sur site et phase de test.</a
+                >
+              </li> -->
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+        <nav class="wy-nav-top" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">COCOBEACH Fr</a>
+        </nav>
+
+        <div class="wy-nav-content">
+          <div class="rst-content">
+            <div role="navigation" aria-label="Page navigation">
+              <ul class="wy-breadcrumbs">
+                <li>
+                  <a
+                    href="../index.html"
+                    class="icon icon-home"
+                    aria-label="Home"
+                  ></a>
+                </li>
+                <li class="breadcrumb-item active">Aperçu</li>
+                <li class="wy-breadcrumbs-aside">
+                  <a
+                    href="../_sources/Platform_features/index.rst.txt"
+                    rel="nofollow"
+                  >
+                    Afficher la source de la page</a
+                  >
+                </li>
+              </ul>
+              <hr />
+            </div>
+            <div
+              role="main"
+              class="document"
+              itemscope="itemscope"
+              itemtype="http://schema.org/Article"
+            >
+              <div itemprop="articleBody">
+                <section id="apercu">
+                  <h1>
+                    Aperçu<a
+                      class="headerlink"
+                      href="#apercu"
+                      title="Lien permanent vers cette rubrique"
+                      ></a
+                    >
+                  </h1>
+                  <p>
+                    Ce guide décrit étape par étape l’utilisation de la
+                    plateforme, depuis la connexion jusqu’au reporting.
+                  </p>
+                </section>
+                <section id="connexion-a-la-plateforme">
+                  <h1>
+                    Connexion à la plateforme<a
+                      class="headerlink"
+                      href="#connexion-a-la-plateforme"
+                      title="Lien permanent vers cette rubrique"
+                      ></a
+                    >
+                  </h1>
+                  <p>
+                    L’accès à la plateforme d’administration se fait via un
+                    navigateur web. Voici les étapes à suivre pour se connecter
+                    :
+                  </p>
+                  <ul class="simple">
+                    <li>
+                      <p>
+                        <strong>Ouvrez votre navigateur</strong> (Google Chrome,
+                        Firefox, Edge, etc.) ;
+                      </p>
+                    </li>
+                    <li>
+                      <p>
+                        Saisissez l’URL suivante : «
+                        <a
+                          class="reference external"
+                          href="https://cocobeach-stg.kaeyros.org/login"
+                          >https://cocobeach-stg.kaeyros.org/login</a
+                        >
+                        » ;
+                      </p>
+                    </li>
+                    <li>
+                      <p>
+                        Renseignez les
+                        <strong>identifiants fournis</strong> lors de la
+                        souscription au <strong>service</strong> (adresse e-mail
+                        et mot de passe) ;
+                      </p>
+                    </li>
+                    <li>
+                      <p>
+                        Cliquez sur <strong>« Connexion »</strong> pour accéder
+                        à votre espace.
+                      </p>
+                    </li>
+                  </ul>
+                  <img
+                    alt="login"
+                    src="../_sources/images/login.png"
+                  />
+                  <p>
+                    En cas d’oubli de mot de passe, veuillez nous cliquer sur le bouton
+                    <strong>Forgot password</strong> et entrer votre email.
+                  </p>
+                  <img
+                    alt="forgotpassword"
+                    src="../_sources/images/forgotpassword.png"
+                  />
+                  <p>
+                    Une fois que c'est fait, un mail sera envoyé à l'adresse renseigné et vous
+                    devez l'ouvrir et cliquer sur le bouton <strong>Changer le mot de passe</strong>
+                    l'interface suivante s'ouvrira et la vous entrez le nouveau mot de passe et vous le confirmez
+                  </p>
+                  <img
+                    alt="resetpassword"
+                    src="../_sources/images/resetpassword.png"
+                  />
+                  <p>
+                    Une fois connecté, vous aurez un accès direct au dashboard de l'application.
+                  </p>
+                  <img
+                    alt="dashboard"
+                    src="../_sources/images/dashboard.png"
+                  />
+                </section>
+                <section id="events">
+                  <h1>
+                    Events<a
+                      class="headerlink"
+                      href="#events"
+                      title="Lien permanent vers cette rubrique"
+                      ></a
+                    >
+                  </h1>
+                  <p>
+                    Une fois sur l'onglet Events, vous pouvez :
+                  </p>
+                  <ul class="simple">
+                    <li>
+                      <p>visualiser les évènements déjà crées,</p>
+                    </li>
+                    <li><p>créer un évènement,</p></li>
+                    <li><p>télécharger le rapport des évènements,</p></li>
+                    <li><p>mettre à jour un évènement ou le supprimer</p></li>
+                  </ul>
+                  <p>
+                    <strong>1. Visualisation les évènements déjà crées</strong>
+                  </p>
+                  <p>
+                    Cette fonctionnalité permet de consulter rapidement la liste
+                    des évènements.
+                  </p>
+                  <img
+                    alt="events"
+                    src="../_sources/images/events.png"
+                  />
+                  <p><strong>2. Créer un évènement</strong></p>
+                  <p>
+                    Cette fonctionnalité permet de créer un évènement.
+                  </p>
+                  <ul class="simple">
+                    <li>
+                      <p>
+                        Cliquez sur le bouton
+                        <strong>Create event</strong>.
+                      </p>
+                    </li>
+                  </ul>
+                  <img
+                    alt="createevent"
+                    src="../_sources/images/createevent.png"
+                  />
+                  <ul class="simple">
+                    <li>
+                      <p>
+                        Dans la boîte de dialogue, il ya les différentes informations à
+                        renseigner pour créer un évènement. Puis  cliquez sur <strong>Create event</strong> pour enregistrer l'évènement, elle sera immédiatement affichée dans le
+                        tableau.
+                      </p>
+                    </li>
+                  </ul>
+                  <p>
+                    <strong>3. Téléchargement du rapport des évènements</strong>
+                  </p>
+                  <p>
+                    Cette option permet d’exporter le rapport des évènements sous
+                    forme de fichier Excel ou CSV.
+                  </p>
+                  <ul class="simple">
+                    <li>
+                      <p>
+                        Sélectionnez le jour pour lequel vous souhaitez obtenir
+                        le rapport.
+                      </p>
+                    </li>
+                    <li>
+                      <p>Cliquez sur le bouton <strong>Export Report</strong> et selectionnez le format de fichier souhaité entre Excel et CSV.</p>
+                    </li>
+                  </ul>
+                   <img
+                    alt="exportevent"
+                    src="../_sources/images/exportevent.png"
+                  />
+                  <ul class="simple">
+                    <li>
+                      <p>
+                        Le fichier Excel ou CSV regroupant tous
+                        les évènements pour la date sélectionnée sera
+                        téléchargé automatiquement, prêt à être consulté ou
+                        analysé.
+                      </p>
+                    </li>
+                  </ul>
+                  <p><strong>4. Mise à jour/Suppression d'un évènement</strong></p>
+                  <p>
+                    Cette fonctionnalité permet de mettre à jour/supprimer un évènement.
+                  </p>
+                   <img
+                    alt="actionevent"
+                    src="../_sources/images/actionevent.png"
+                  />
+                  <p>
+                    Lorsque vous cliquez sur le bouton <strong>Update</strong> vous avez la modal de l'image suivant pour modifier l'event selectionné
+                  </p>
+                  <img
+                    alt="updateevent"
+                    src="../_sources/images/updateevent.png"
+                  />
+                  <p>
+                    Lorsque vous cliquez sur le bouton <strong>Delete</strong> vous avez la modal de l'image suivant pour supprimer l'event selectionné
+                  </p>
+                  <img
+                    alt="deleteevent"
+                    src="../_sources/images/deleteevent.png"
+                  />
+                </section>
+                <section id="parametrer-sa-plateforme">
+                  <h1>
+                   Gestion des packages<a
+                      class="headerlink"
+                      href="#parametrer-sa-plateforme"
+                      title="Lien permanent vers cette rubrique"
+                      ></a
+                    >
+                  </h1>
+                  <p>
+                    Il faut cliquer sur l'onglet <strong>packages</strong> pour accéder à cette partie.
+                    Il est question de créer les packages pour un évènement en particulier.
+                  </p>
+                  <p>
+                    Une fois sur l'onglet packages, vous pouvez :
+                  </p>
+                  <ul class="simple">
+                    <li>
+                      <p>visualiser les packages déjà crées,</p>
+                    </li>
+                    <li><p>créer un package,</p></li>
+                    <li><p>télécharger le rapport des packages,</p></li>
+                    <li><p>mettre à jour un package ou le supprimer</p></li>
+                  </ul>
+                  <p>
+                    <strong>1. Visualisation les packages déjà crées</strong>
+                  </p>
+                  <p>
+                    Cette fonctionnalité permet de consulter rapidement la liste
+                    des packages.
+                  </p>
+                  <img
+                    alt="images/package"
+                    src="../_sources/images/package.png"
+                  />
+                  <p><strong>2. Créer un évènement</strong></p>
+                  <p>
+                    Cette fonctionnalité permet de créer un package.
+                  </p>
+                  <ul class="simple">
+                    <li>
+                      <p>
+                        Cliquez sur le bouton
+                        <strong>Create package</strong>.
+                      </p>
+                    </li>
+                  </ul>
+                  <img
+                    alt="createpackage"
+                    src="../_sources/images/createpackage.png"
+                  />
+                  <ul class="simple">
+                    <li>
+                      <p>
+                        Dans la boîte de dialogue, il ya les différentes informations à
+                        renseigner pour créer un package. Puis  cliquez sur <strong>Create package</strong> pour enregistrer le package, il sera immédiatement affichée dans le
+                        tableau.
+                      </p>
+                    </li>
+                  </ul>
+                  <p>
+                    <strong>3. Téléchargement du rapport des packages</strong>
+                  </p>
+                  <p>
+                    Cette option permet d’exporter le rapport des packages sous
+                    forme de fichier Excel ou CSV.
+                  </p>
+                  <ul class="simple">
+                    <li>
+                      <p>
+                        Sélectionnez le jour pour lequel vous souhaitez obtenir
+                        le rapport.
+                      </p>
+                    </li>
+                    <li>
+                      <p>Cliquez sur le bouton <strong>Export Report</strong> et selectionnez le format de fichier souhaité entre Excel et CSV.</p>
+                    </li>
+                  </ul>
+                   <img
+                    alt="exportpackage"
+                    src="../_sources/images/exportpackage.png"
+                  />
+                  <ul class="simple">
+                    <li>
+                      <p>
+                        Le fichier Excel ou CSV regroupant tous
+                        les packages pour la date sélectionnée sera
+                        téléchargé automatiquement, prêt à être consulté ou
+                        analysé.
+                      </p>
+                    </li>
+                  </ul>
+                  <p><strong>4. Mise à jour/Suppression d'un package</strong></p>
+                  <p>
+                    Cette fonctionnalité permet de mettre à jour/supprimer un package.
+                  </p>
+                   <img
+                    alt="actionpackage"
+                    src="../_sources/images/actionpackage.png"
+                  />
+                  <p>
+                    Lorsque vous cliquez sur le bouton <strong>Update</strong> vous avez la modal de l'image suivant pour modifier le package selectionné
+                  </p>
+                  <img
+                    alt="updatepackage"
+                    src="../_sources/images/updatepackage.png"
+                  />
+                  <p>
+                    Lorsque vous cliquez sur le bouton <strong>Delete</strong> vous avez la modal de l'image suivant pour supprimer le package selectionné
+                  </p>
+                  <img
+                    alt="deletepackage"
+                    src="../_sources/images/deletepackage.png"
+                  />
+                </section>
+                <section id="gestion-des-employes">
+                  <h1>
+                    Visualisation de l'historique de reservation<a
+                      class="headerlink"
+                      href="#gestion-des-employes"
+                      title="Lien permanent vers cette rubrique"
+                      ></a
+                    >
+                  </h1>
+                  <p>
+                    Depuis l’onglet <strong>Sales history</strong>, permet de visualiser l'historique de ventes effectuees
+                  </p>
+                  <img
+                    alt="sales"
+                    src="../_sources/images/sales.png"
+                  />
+                  <p>
+                    <strong>Téléchargement du rapport de l'historique de ventes</strong>
+                  </p>
+                  <p>
+                    Cette option permet d’exporter le rapport de l'historique de ventes sous
+                    forme de fichier Excel ou CSV.
+                  </p>
+                  <ul class="simple">
+                    <li>
+                      <p>
+                        Sélectionnez le jour pour lequel vous souhaitez obtenir
+                        le rapport.
+                      </p>
+                    </li>
+                    <li>
+                      <p>Cliquez sur le bouton <strong>Export Report</strong> et selectionnez le format de fichier souhaité entre Excel et CSV.</p>
+                    </li>
+                  </ul>
+                   <img
+                    alt="exportsales"
+                    src="../_sources/images/exportsales.png"
+                  />
+                  <ul class="simple">
+                    <li>
+                      <p>
+                        Le fichier Excel ou CSV regroupant l'historique de ventes pour la date sélectionnée sera
+                        téléchargé automatiquement, prêt à être consulté ou
+                        analysé.
+                      </p>
+                    </li>
+                  </ul>
+                </section>
+                <section id="gestion-des-comptes">
+                  <h1>
+                    Gestion des réservations<a
+                      class="headerlink"
+                      href="#gestion-des-comptes"
+                      title="Lien permanent vers cette rubrique"
+                      ></a
+                    >
+                  </h1>
+                  <p>
+                    Elle se fait dans l’onglet <strong>Attendees</strong>.
+                  </p>
+                  <img
+                    alt="attendees"
+                    src="../_sources/images/attendees.png"
+                  />
+                  <p>
+                    Sur cette section, il y a les fonctionnalités suivantes:
+                  </p>
+                  <ul class="simple">
+                    <li>
+                      <p>créer une réservation </p>
+                    </li>
+                    <li><p>Annuler une réservation</p></li>
+                    <li><p>Valider une réservation</p></li>
+                    <li><p>télécharger le rapport des réservation</p></li>
+                  </ul>
+                  <p><strong>1. Création d'une réservation</strong></p>
+                  <p>
+                    Cette fonctionnalité vous permet de créer une nouvelle
+                    réservation.
+                  </p>
+                  <p>
+                    En cliquant sur le bouton
+                    <strong>Make a reservation</strong>, une boîte de dialogue
+                    va s’ouvrir et vous devez renseigner les informations de la
+                    réservation que vous voulez ajouter à ce niveau.
+                  </p>
+                  <img
+                    alt="createattendees"
+                    src="../_sources/images/createattendees.png"
+                  />
+                  <p>
+                    <strong
+                      >2. Annulation d'une réservation.</strong
+                    >
+                  </p>
+                  <img
+                    alt="cancelattendees"
+                    src="../_sources/images/cancelattendees.png"
+                  />
+                  <p>
+                    Cette modal permet d'Annuler la réservation selectionnée.
+                  </p>
+                  <p><strong>3. Validation d'une réservation</strong></p>
+                  <img
+                    alt="validateattendees"
+                    src="../_sources/images/validateattendees.png"
+                  />
+                  <p>
+                    Cette modal permet de valider la réservation selectionnée.
+                  </p>
+                  <p><strong>4. Téléchargement du rapport de réservation</strong></p>
+                  <img
+                    alt="exportattendees"
+                    src="../_sources/images/exportattendees.png"
+                  />
+                  <ul class="simple">
+                    <li>
+                      <p>
+                        Sélectionnez le jour pour lequel vous souhaitez obtenir
+                        le rapport.
+                      </p>
+                    </li>
+                    <li>
+                      <p>Cliquez sur le bouton <strong>Export Report</strong> et selectionnez le format de fichier souhaité entre Excel et CSV.</p>
+                    </li>
+                    <li>
+                        <p>
+                        Le fichier Excel ou CSV regroupant les réservations pour la date sélectionnée sera
+                        téléchargé automatiquement, prêt à être consulté ou
+                        analysé.
+                      </p>
+                    </li>
+                  </ul>
+                </section>
+                <section id="utilisateur">
+                  <h1>
+                   Gestion des utilisateurs<a
+                      class="headerlink"
+                      href="#utilisateur"
+                      title="Lien permanent vers cette rubrique"
+                      ></a
+                    >
+                  </h1>
+                 <p>
+                    Elle se fait dans l’onglet <strong>Users&Roles</strong>.
+                  </p>
+                  <img
+                    alt="attendees"
+                    src="../_sources/images/users.png"
+                  />
+                  <p>
+                    Sur cette section, il y a les fonctionnalités suivantes:
+                  </p>
+                  <ul class="simple">
+                    <li>
+                      <p>créer un utilisateur </p>
+                    </li>
+                    <li><p>Modifier les informations d'un utilisateur</p></li>
+                    <li><p>Ajouter un role a un utilisateur</p></li>
+                    <li><p>Retirer un role a un utilisateur</p></li>
+                    <li><p>télécharger le rapport des réservation</p></li>
+                  </ul>
+                  <p><strong>1. Création d'un utilisateur</strong></p>
+                  <p>
+                    Cette fonctionnalité vous permet de créer un nouvel
+                    utilisateur.
+                  </p>
+                  <p>
+                    En cliquant sur le bouton
+                    <strong>Add user</strong>, une boîte de dialogue
+                    va s’ouvrir et vous devez renseigner les informations de l'
+                    utilisateur que vous voulez ajouter à ce niveau.
+                  </p>
+                  <img
+                    alt="createusers"
+                    src="../_sources/images/createusers.png"
+                  />
+                  <p>
+                    <strong
+                      >2. Modifier un utilisateur.</strong
+                    >
+                  </p>
+                  <img
+                    alt="updateusers"
+                    src="../_sources/images/updateusers.png"
+                  />
+                  <p>
+                    Cette modal permet de modifier les informations d' un utilisateur selectionné.
+                  </p>
+                  <p>
+                    <strong
+                      >3. Ajout d'un role a un utilisateur.</strong
+                    >
+                  </p>
+                  <img
+                    alt="addroleusers"
+                    src="../_sources/images/addroleusers.png"
+                  />
+                  <p>
+                    Cette modal permet d'attribuer un role a l'utilisateur selectionné.
+                  </p>
+                  <p><strong>4. Retrait d'un role a un utilisateur</strong></p>
+                  <img
+                    alt="removeroleusers"
+                    src="../_sources/images/removeroleusers.png"
+                  />
+                  <p>
+                    Cette modal permet de retirer le role attribue a l'utilisateur selectionné.
+                  </p>
+                  <p><strong>5. Téléchargement de la liste des utilisateurs</strong></p>
+                  <img
+                    alt="exportattendees"
+                    src="../_sources/images/exportusers.png"
+                  />
+                  <ul class="simple">
+                    <li>
+                      <p>Cliquez sur le bouton <strong>Export Report</strong> et selectionnez le format de fichier souhaité entre Excel et CSV.</p>
+                    </li>
+                    <li>
+                        <p>
+                        Le fichier Excel ou CSV regroupant les utilisateurs sera
+                        téléchargé automatiquement, prêt à être consulté.
+                      </p>
+                    </li>
+                  </ul>
+                </section>
+              </div>
+            </div>
+            <footer>
+              <div
+                class="rst-footer-buttons"
+                role="navigation"
+                aria-label="Pied de page"
+              >
+                <a
+                  href="../general_presentation/index.html"
+                  class="btn btn-neutral float-left"
+                  title="Présentation générale de l’outil de pointage"
+                  accesskey="p"
+                  rel="prev"
+                  ><span
+                    class="fa fa-arrow-circle-left"
+                    aria-hidden="true"
+                  ></span>
+                  Précédent</a
+                >
+                <!-- <a
+                  href="../Config_guide/index.html"
+                  class="btn btn-neutral float-right"
+                  title="Introduction"
+                  accesskey="n"
+                  rel="next"
+                  >Suivant
+                  <span
+                    class="fa fa-arrow-circle-right"
+                    aria-hidden="true"
+                  ></span
+                ></a> -->
+              </div>
+
+              <hr />
+
+              <div role="contentinfo">
+                <p>&#169; Droits d'auteur 2025, Kaeyros Analytics.</p>
+              </div>
+
+              Compilé avec <a href="https://www.sphinx-doc.org/">Sphinx</a> en
+              utilisant un
+              <a href="https://github.com/readthedocs/sphinx_rtd_theme"
+                >thème</a
+              >
+              fourni par <a href="https://readthedocs.org">Read the Docs</a>.
+            </footer>
+          </div>
+        </div>
+      </section>
+    </div>
+    <script>
+      jQuery(function () {
+        SphinxRtdTheme.Navigation.enable(true);
+      });
+    </script>
+  </body>
+</html>
