@@ -1,0 +1,36 @@
+name: CI/CD Pipeline staging
+
+on:
+  push:
+    branches: ["Demokratiewerkstatt"]
+
+env:
+  FRONTEND_IMAGE_REPOSITORY: ghcr.io/kaeyros-analytics-org/docs-cocobeach
+
+defaults:
+  run:
+    shell: bash
+
+jobs:
+  ci:
+    name: Continuous Integration - Production
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set Git Commit SHA as Tag
+        run: echo "IMAGE_TAG=$(git rev-parse --short HEAD)" >> $GITHUB_ENV
+
+      - name: Login to GitHub Container Registry
+        run: |
+          echo "${{ secrets.TOKEN }}" | docker login ghcr.io -u "${{ secrets.USERNAME }}" --password-stdin
+
+      - name: Build the Docker image for backend
+        run: |
+          docker build -t ${{ env.FRONTEND_IMAGE_REPOSITORY }}:${{ env.IMAGE_TAG }} .
+
+      - name: Push backend image to GitHub Container Registry
+        run: |
+          docker push ${{ env.FRONTEND_IMAGE_REPOSITORY }}:${{ env.IMAGE_TAG }}
