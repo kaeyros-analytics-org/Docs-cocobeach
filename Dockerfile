@@ -2,14 +2,14 @@
 FROM python:3.12-slim
 
 # ------------- Install Sphinx + themes -------------
-RUN pip install --no-cache-dir sphinx sphinx-rtd-theme myst-parser
+# RUN pip install --no-cache-dir sphinx sphinx-rtd-theme myst-parser
 
 # ------------- Copy the Sphinx project -------------
 WORKDIR /docs
 COPY . /docs
 
 # ------------- Build HTML -------------
-RUN sphinx-build -b html . _build/html
+# RUN sphinx-build -b html . _build/html
 
 # ------------- Serve with Nginx -------------
 FROM nginx:alpine
