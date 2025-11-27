@@ -2,7 +2,7 @@ name: CI/CD Pipeline staging
 
 on:
   push:
-    branches: ["Demokratiewerkstatt"]
+    branches: ["master"]
 
 env:
   FRONTEND_IMAGE_REPOSITORY: ghcr.io/kaeyros-analytics-org/docs-cocobeach
